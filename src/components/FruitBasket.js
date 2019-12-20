@@ -3,7 +3,7 @@ import React, { Component }  from 'react';
 import Filter from './Filter';
 import FilteredFruitList from './FilteredFruitList.js';
 
-const FruitBasket = ({fruit, filters, currentFilter, onUpdateFilter}) => 
+const FruitBasket = ({fruit, filters, currentFilter, onUpdateFilter}) =>
   <div className='fruit-basket'>
     <Filter
       filters={filters}
@@ -12,7 +12,7 @@ const FruitBasket = ({fruit, filters, currentFilter, onUpdateFilter}) =>
       fruit={fruit}
       filter={currentFilter} />
   </div>
-    
+
 
   handleFilterChange = event => {
     console.log('new filter: ', event.target.value);
