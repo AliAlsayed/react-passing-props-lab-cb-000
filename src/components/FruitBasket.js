@@ -4,12 +4,14 @@ import Filter from './Filter';
 import FilteredFruitList from './FilteredFruitList.js';
 
 const FruitBasket = ({fruit, filters, currentFilter, onUpdateFilter}) => 
-  <Filter
-    filters={filters}
-    handleChange={onUpdateFilter} />
-  <FilteredFruitList
-    fruit={fruit}
-    filter={currentFilter} />
+  <div className='fruit-basket'>
+    <Filter
+      filters={filters}
+      handleChange={onUpdateFilter} />
+    <FilteredFruitList
+      fruit={fruit}
+      filter={currentFilter} />
+  </div>
     
 
   handleFilterChange = event => {
